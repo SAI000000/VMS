@@ -123,10 +123,7 @@ public class RegistrationPage extends JFrame {
 		lblNewLabel_1_4_1_1.setFont(new Font("Tahoma", Font.BOLD, 18));
 		contentPane.add(lblNewLabel_1_4_1_1);
 		
-		firstname = new JTextField();	
-		Pattern ptrn = Pattern.compile("(0/91)?[7-9][0-9]{9}");  
-		//the matcher() method creates a matcher that will match the given input against this pattern  
-		Matcher match = ptrn.matcher(str);  
+		firstname = new JTextField();	 
 		firstname.setBounds(323, 193, 219, 45);
 		firstname.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		contentPane.add(firstname);

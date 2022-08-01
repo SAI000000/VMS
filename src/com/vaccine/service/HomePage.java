@@ -60,15 +60,20 @@ public class HomePage extends JFrame {
 		JPanel panel = new JPanel();
 		panel.setBorder(new MatteBorder(4, 4, 4, 5, (Color) new Color(65, 105, 225)));
 		panel.setBackground(new Color(173, 216, 230));
-		panel.setBounds(56, 63, 634, 488);
+		panel.setBounds(63, 61, 634, 488);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Welcome to Online Vaccination Centre");
 		lblNewLabel.setFont(new Font("Tempus Sans ITC", Font.BOLD, 28));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(50, 305, 528, 142);
+		lblNewLabel.setBounds(47, 15, 528, 142);
 		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\91777\\Downloads\\pexels-cesar-perez-733745 (1).jpg"));
+		lblNewLabel_2.setBounds(103, 167, 400, 291);
+		panel.add(lblNewLabel_2);
 		
 		JButton login = new JButton("Login");
 		login.setBorderPainted(false);
