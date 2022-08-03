@@ -18,6 +18,7 @@ import com.toedter.calendar.JCalendar;
 import com.toedter.calendar.JDayChooser;
 import java.awt.event.InputMethodListener;
 import java.awt.event.InputMethodEvent;
+import com.toedter.calendar.JDateChooser;
 
 public class RegistrationPage extends JFrame {
 
@@ -100,7 +101,7 @@ public class RegistrationPage extends JFrame {
 		contentPane.add(lblNewLabel_1_4);
 		
 		JLabel lblNewLabel_1_4_1 = new JLabel("Date of Birth:");
-		lblNewLabel_1_4_1.setBounds(172, 504, 141, 45);
+		lblNewLabel_1_4_1.setBounds(172, 518, 141, 45);
 		lblNewLabel_1_4_1.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNewLabel_1_4_1.setFont(new Font("Tahoma", Font.BOLD, 18));
 		contentPane.add(lblNewLabel_1_4_1);
@@ -176,9 +177,9 @@ public class RegistrationPage extends JFrame {
 		btnReset.setBackground(new Color(255, 69, 0));
 		contentPane.add(btnReset);
 		
-		JCalendar calendar = new JCalendar();
-		calendar.setBounds(336, 510, 219, 186);
-		contentPane.add(calendar);
+		JDateChooser dateChooser = new JDateChooser();
+		dateChooser.setBounds(323, 518, 219, 45);
+		contentPane.add(dateChooser);
 		setUndecorated(true);
 	}
 }
