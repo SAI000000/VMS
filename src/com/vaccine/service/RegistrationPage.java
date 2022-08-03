@@ -29,6 +29,8 @@ public class RegistrationPage extends JFrame {
 	private JTextField phone;
 	private JTextField email;
 	private JTextField txtAssjdfkjlasflkjasdlkflks;
+	private JTextField textField;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -180,6 +182,28 @@ public class RegistrationPage extends JFrame {
 		JDateChooser dateChooser = new JDateChooser();
 		dateChooser.setBounds(323, 518, 219, 45);
 		contentPane.add(dateChooser);
+		
+		textField = new JTextField();
+		textField.setBounds(323, 595, 219, 45);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setColumns(10);
+		textField_1.setBounds(323, 675, 219, 45);
+		contentPane.add(textField_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Create password:");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 17));
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_2.setBounds(138, 603, 175, 36);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("Confirm password:");
+		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_2_1.setFont(new Font("Tahoma", Font.BOLD, 17));
+		lblNewLabel_2_1.setBounds(138, 676, 175, 36);
+		contentPane.add(lblNewLabel_2_1);
 		setUndecorated(true);
 	}
 }
